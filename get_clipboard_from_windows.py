@@ -1,22 +1,7 @@
 import subprocess
 
-podmiana = "test"
+def copy2clip(txt):
+    cmd='echo '+txt.strip()+'|clip'
+    return subprocess.check_call(cmd, shell=True)
 
-
-def get_clipboard():
-    p = subprocess.Popen(['pbpaste'], stdout=subprocess.PIPE)
-    data = str(p.stdout.read())
-    if len(data) > 10:
-        swap_address(data)
-
-  
-
-def swap_address(data):
-    p = subprocess.Popen(['pbcopy'], stdin=subprocess.PIPE)
-    p.stdin.write(podmiana)
-
-
-
-
-while True:
-    get_clipboard()
+copy2clip('This is on my clipboard!')
