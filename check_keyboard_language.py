@@ -10,5 +10,5 @@ lid = klid & (2**16 - 1)
 
 
 
-lid_hex = hex(lid);
-print lid_hex;
+lid_hex = hex(lid)
+print lid_hex
