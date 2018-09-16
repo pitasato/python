@@ -14,3 +14,6 @@ lid = klid & (2**16 - 1)
 
 lid_hex = hex(lid)
 print lid_hex
+
+# dalej http://atpad.sourceforge.net/languages-ids.txt
+# lub tutaj https://msdn.microsoft.com/en-us/library/cc233982.aspx
