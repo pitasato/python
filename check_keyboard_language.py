@@ -6,6 +6,8 @@ curr_window = user32.GetForegroundWindow()
 thread_id = user32.GetWindowThreadProcessId(curr_window, 0)
 
 klid = user32.GetKeyboardLayout(thread_id)
+
+#2 do potęgi 16(liczba całkowita nie hexydecymalna) - 1
 lid = klid & (2**16 - 1)
 
 
